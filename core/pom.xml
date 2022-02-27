@@ -7,7 +7,7 @@
     <parent>
         <artifactId>dependency-management-bom</artifactId>
         <groupId>liga.medical</groupId>
-        <version>0.0.1</version>
+        <version>0.0.1-SNAPSHOT</version>
         <relativePath>../dependency-management-bom/pom.xml</relativePath>
     </parent>
 
@@ -22,14 +22,15 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-thymeleaf</artifactId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
 
         <dependency>
+            <!--        Эта зависимость тянет компоненты спринга их тоже нужно сканировать-->
             <groupId>liga.medical</groupId>
             <artifactId>common-services</artifactId>
         </dependency>
@@ -46,14 +47,10 @@
             <artifactId>monitoring-dto</artifactId>
         </dependency>
 
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-        </dependency>
     </dependencies>
 
     <build>
-        <finalName>message-analyzer</finalName>
+<!--        <finalName>analyzer-service</finalName>-->
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
