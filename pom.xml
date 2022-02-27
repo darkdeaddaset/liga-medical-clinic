@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>liga.medical</groupId>
+        <artifactId>common</artifactId>
+        <version>0.0.1</version>
+    </parent>
+
+    <version>0.0.1</version>
+    <artifactId>medical-monitoring</artifactId>
+    <packaging>pom</packaging>
+
+    <name>medicine-clinic</name>
+    <description>Сервис экстренного реагирования</description>
+
+    <modules>
+        <module>dependency-management-bom</module>
+        <module>dto</module>
+        <module>core-api</module>
+        <module>utils</module>
+        <module>core</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+    </dependencies>
+</project>
